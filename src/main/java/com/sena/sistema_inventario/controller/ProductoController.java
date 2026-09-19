@@ -17,7 +17,7 @@ import com.sena.sistema_inventario.service.ProductoService;
 
 @RestController
 @RequestMapping("/api/productos")
-@CrossOrigin(origins = "https://inventariojosue.netlify.app")
+@CrossOrigin(origins = "https://inventariojose.netlify.app")
 
 public class ProductoController { 
 
