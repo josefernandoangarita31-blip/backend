@@ -16,8 +16,8 @@ import com.sena.sistema_inventario.model.Producto;
 import com.sena.sistema_inventario.service.ProductoService;
 
 @RestController
-@RequestMapping("/api/productos")
-@CrossOrigin(origins = "https://inventariojose.netlify.app")
+@RequestMapping("/api/productos") // Ajustar ruta según corresponda
+@CrossOrigin(origins = "*")
 
 public class ProductoController { 
 
