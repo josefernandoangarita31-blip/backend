@@ -17,21 +17,25 @@ public class Producto {
     private String codigo;
     private String nombre;
     private String categoria;
+    private String proveedor;
     private Double precio;
     private Integer cantidad;
+    private Integer stockMinimo;
 
     // Constructor vacío (Obligatorio para JPA/Hibernate)
     public Producto() {
     }
 
-    // Constructor con campos
-    public Producto(Long id, String codigo, String nombre, String categoria, Double precio, Integer cantidad) {
+    // Constructor completo
+    public Producto(Long id, String codigo, String nombre, String categoria, String proveedor, Double precio, Integer cantidad, Integer stockMinimo) {
         this.id = id;
         this.codigo = codigo;
         this.nombre = nombre;
         this.categoria = categoria;
+        this.proveedor = proveedor;
         this.precio = precio;
         this.cantidad = cantidad;
+        this.stockMinimo = stockMinimo;
     }
 
     // Getters y Setters
@@ -67,6 +71,14 @@ public class Producto {
         this.categoria = categoria;
     }
 
+    public String getProveedor() {
+        return proveedor;
+    }
+
+    public void setProveedor(String proveedor) {
+        this.proveedor = proveedor;
+    }
+
     public Double getPrecio() {
         return precio;
     }
@@ -81,5 +93,13 @@ public class Producto {
 
     public void setCantidad(Integer cantidad) {
         this.cantidad = cantidad;
+    }
+
+    public Integer getStockMinimo() {
+        return stockMinimo;
+    }
+
+    public void setStockMinimo(Integer stockMinimo) {
+        this.stockMinimo = stockMinimo;
     }
 }
